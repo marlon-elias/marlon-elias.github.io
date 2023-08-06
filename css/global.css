@@ -1,0 +1,37 @@
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+a,
+li {
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+  list-style: none;
+  color: #000000;
+}
+body {
+  font-family: "Fira Sans", Arial, Helvetica, sans-serif;
+}
+.foto {
+  max-width: 100%;
+  display: block;
+}
+.subtitulo {
+  font-size: 7rem;
+  word-break: break-all;
+  text-transform: uppercase;
+  max-width: 4ch;
+}
+.empresa-titulo {
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+.footer-texto,
+.footer-contato li,
+.rodape,
+.instagram a {
+  color: #fff;
+}

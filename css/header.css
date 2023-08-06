@@ -1,0 +1,37 @@
+.header {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+@media (max-width: 483px) {
+  .header,
+  .header-menu {
+    justify-content: center;
+  }
+}
+
+.header-menu a {
+  padding-top: 5px;
+  display: block;
+  border-bottom: 4px solid #ae00ff00;
+}
+
+.header-menu a:hover {
+  border-bottom: 4px solid #ae00ff;
+  transition: 0.4s;
+}
+
+.header .marca {
+  font-size: 1.8rem;
+}
+.header-menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 30px;
+  font-size: 1.125rem;
+  padding: 5px 10px;
+}

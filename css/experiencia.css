@@ -1,0 +1,116 @@
+.container-experiencia {
+  display: grid;
+  max-width: 1200px;
+  margin: 0 auto;
+  grid-template-columns: 1fr 2fr;
+  padding: 40px;
+  gap: 100px;
+}
+
+.container-experiencia .subtitulo {
+  color: #e0e0e0;
+}
+.experiencia-texto {
+  line-height: 1.33;
+  font-size: 1.5rem;
+  max-width: 40ch;
+  margin-bottom: 50px;
+  color: #525252;
+  padding-top: 15px;
+}
+.experiencia-texto strong {
+  color: #000;
+}
+
+.lista-experiencia {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: #ededed;
+  padding: 20px;
+  gap: 20px;
+  border-radius: 4px;
+}
+.container-empresa1,
+.container-empresa2 {
+  display: grid;
+  gap: 1rem;
+  align-content: start;
+}
+
+.empresa-texto {
+  font-size: 1rem;
+  line-height: 1.3;
+  color: #525252;
+}
+.botao {
+  background-color: #ffffff;
+  padding: 5px 10px;
+}
+
+.botoes-linguagem {
+  font-size: 0.9rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  /* place-items: start center; */
+}
+.lista-experiencia {
+  position: relative;
+}
+.ano {
+  width: 70px;
+  text-align: end;
+  color: #525252;
+  position: absolute;
+  left: -90px;
+  top: 22px;
+}
+.empresa-titulo1::before {
+  content: "";
+  display: inline-block;
+
+  background-image: linear-gradient(#d17bff, #ae00ff);
+  width: 5px;
+  height: 20px;
+  left: -5px;
+  position: absolute;
+}
+
+.lista-experiencia {
+  margin-bottom: 20px;
+}
+.container-lista {
+  margin-bottom: 40px;
+}
+
+@media (max-width: 800px) {
+  .container-experiencia,
+  .formacao-container {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin-top: 30px;
+  }
+  .container-experiencia .subtitulo {
+    font-size: 2.5rem;
+    word-break: normal;
+    text-transform: capitalize;
+    color: #000;
+  }
+  .ano {
+    text-align: start;
+    font-size: 0.9rem;
+    color: #525252;
+    position: absolute;
+    left: 110px;
+    top: 24px;
+  }
+}
+@media (max-width: 650px) {
+  .container-experiencia {
+    padding: 30px 5px;
+  }
+  .empresa-titulo1::before {
+    content: "";
+    left: 6px;
+  }
+}
